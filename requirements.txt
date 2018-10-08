@@ -1,0 +1,4 @@
+boto==2.48.0
+Jinja2==2.10
+pymqi==1.7.2
+PyYAML==3.12

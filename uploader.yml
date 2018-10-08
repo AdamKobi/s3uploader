@@ -1,0 +1,18 @@
+---
+# General Settings
+max_workers: 4
+
+# S3 Settings
+s3_host: 192.168.1.105
+s3_is_secure: False
+s3_port: 8000
+s3_access_key: accessKey1
+s3_secret_key: verySecretKey1
+
+# IBM MQ Settings
+mq_host: 192.168.1.105
+mq_port: 1414
+mq_queue_manager: QM1
+mq_channel: DEV.APP.SVRCONN
+mq_request_queue: DEV.QUEUE.1
+mq_replyto_queue: DEV.QUEUE.2

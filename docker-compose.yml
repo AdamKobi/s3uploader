@@ -1,0 +1,26 @@
+version: "3.2"
+
+services:
+  ibm_mq:
+    image: ibmcom/mq:${TAG:-latest}
+    environment:
+      - LICENSE=accept
+      - MQ_QMGR_NAME=QM1
+    ports:
+      - 1414:1414
+      - 9433:9443
+  
+  s3server:
+    image: scality/s3server:${TAG:-latest}
+    ports:
+      - 8000:8000
+
+  uploader:
+    image: adamhpe/uploader:${TAG:-latest}
+    environment:
+      - MQ_HOST=ibm_mq
+      - S3_HOST=s3server
+    command: python uploader.py --debug
+
+  uploader_put_message:
+    image: adamhpe/uploader_put_message:${TAG:-latest}

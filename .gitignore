@@ -1,0 +1,17 @@
+7.5.0.8-WS-MQC-LinuxX64.tar.gz
+<<<<<<< HEAD
+base64image01.jpeg
+.vscode/
+=======
+.vscode
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+put_message.py
+Dockerfile-put_message
+base64image01.jpeg
+>>>>>>> master
+uploader.code-workspace
+.DS_Store
+uploader.tar
+uploader.zip
